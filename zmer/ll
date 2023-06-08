@@ -1,0 +1,6 @@
+NAME			= minishell
+all:			$(NAME)
+$(NAME):		$(OBJS)
+				@$(CC) $(CFLAG) $(FLAGS) $(OBJS) -o $(NAME)
+				@$(RM) $(NAME)
+re:				fclean $(NAME)
